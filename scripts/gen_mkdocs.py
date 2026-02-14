@@ -66,9 +66,10 @@ def generate_index_md(markdown_files: list[Path]) -> str:
         if readme_text:
             sections.append(readme_text)
 
-    sections.append("## Notes")
+    note_lines = ["## Notes", ""]
     for md in markdown_files:
-        sections.append(f"- [{display_title(md)}]({md.name})")
+        note_lines.append(f"- [{display_title(md)}]({md.name})")
+    sections.append("\n".join(note_lines))
 
     return "\n\n".join(sections).rstrip() + "\n"
 
