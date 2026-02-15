@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Overview - umich-eecs280-lec-notes-ch</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "04-Debuggers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> umich-eecs280-lec-notes-ch
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">01 Command Line Interface (CLI)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">02 IDEs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">03 Compilation (Makefile)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">04 Debuggers</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-debugging-basis">4.1 Debugging Basis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#412-step-over">4.1.2 Step over 运行一行</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-inspect">4.1.3 Inspect 查看变量</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#415-continue">4.1.5 Continue 快进到下一个间断点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-debug-console">4.2 Debug Console</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#431-leak-checking">4.3.1 Leak Checking</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-assertions">4.4 Assertions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#451-cl-debugging">4.5.1 CL Debugging 命令</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#452-input-redirection">4.5.2 Input Redirection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#453-arguments-and-optins">4.5.3 Arguments and optins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-debugging-basis">4.1 Debugging Basis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#412-step-over">4.1.2 Step over 运行一行</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-inspect">4.1.3 Inspect 查看变量</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#415-continue">4.1.5 Continue 快进到下一个间断点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-debug-console">4.2 Debug Console</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#431-leak-checking">4.3.1 Leak Checking</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-assertions">4.4 Assertions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#451-cl-debugging">4.5.1 CL Debugging 命令</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#452-input-redirection">4.5.2 Input Redirection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#453-arguments-and-optins">4.5.3 Arguments and optins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-debugging-basis">4.1 Debugging Basis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#412-step-over">4.1.2 Step over 运行一行</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-inspect">4.1.3 Inspect 查看变量</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#415-continue">4.1.5 Continue 快进到下一个间断点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-debug-console">4.2 Debug Console</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#431-leak-checking">4.3.1 Leak Checking</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-assertions">4.4 Assertions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#451-cl-debugging">4.5.1 CL Debugging 命令</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#452-input-redirection">4.5.2 Input Redirection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#453-arguments-and-optins">4.5.3 Arguments and optins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-debugging-basis">4.1 Debugging Basis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#412-step-over">4.1.2 Step over 运行一行</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-inspect">4.1.3 Inspect 查看变量</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#415-continue">4.1.5 Continue 快进到下一个间断点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-debug-console">4.2 Debug Console</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#431-leak-checking">4.3.1 Leak Checking</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-assertions">4.4 Assertions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#451-cl-debugging">4.5.1 CL Debugging 命令</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#452-input-redirection">4.5.2 Input Redirection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#453-arguments-and-optins">4.5.3 Arguments and optins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-debugging-basis">4.1 Debugging Basis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#412-step-over">4.1.2 Step over 运行一行</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-inspect">4.1.3 Inspect 查看变量</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#415-continue">4.1.5 Continue 快进到下一个间断点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-debug-console">4.2 Debug Console</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#431-leak-checking">4.3.1 Leak Checking</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-assertions">4.4 Assertions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#451-cl-debugging">4.5.1 CL Debugging 命令</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#452-input-redirection">4.5.2 Input Redirection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#453-arguments-and-optins">4.5.3 Arguments and optins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-debugging-basis">4.1 Debugging Basis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#412-step-over">4.1.2 Step over 运行一行</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-inspect">4.1.3 Inspect 查看变量</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#415-continue">4.1.5 Continue 快进到下一个间断点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-debug-console">4.2 Debug Console</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#431-leak-checking">4.3.1 Leak Checking</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-assertions">4.4 Assertions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#451-cl-debugging">4.5.1 CL Debugging 命令</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#452-input-redirection">4.5.2 Input Redirection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#453-arguments-and-optins">4.5.3 Arguments and optins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-debugging-basis">4.1 Debugging Basis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#412-step-over">4.1.2 Step over 运行一行</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#413-inspect">4.1.3 Inspect 查看变量</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#415-continue">4.1.5 Continue 快进到下一个间断点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-debug-console">4.2 Debug Console</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#431-leak-checking">4.3.1 Leak Checking</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-assertions">4.4 Assertions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#451-cl-debugging">4.5.1 CL Debugging 命令</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#452-input-redirection">4.5.2 Input Redirection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#453-arguments-and-optins">4.5.3 Arguments and optins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">05 Version Control (git)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">06 Text Editors (emacs)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">07 Call Stack Procedural Abstraction and Unit Tests</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">08 Pointers and Arrays</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">09 const keyword</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="09-const-keyword.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="09-const-keyword.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10 Compound objects, ADT and Dynamic Allocation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11 C strings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12 Stream and IO</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13 ADT in C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14 Derived Classes and Inheritance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15 Polymorphism</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">16 ContainerADT I</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">17 ContainerADT II</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">18 Memory Model and Dynamic Memory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">19 Managing Dynamic Memory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">20 Deep Copies and the Big Three</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">21 Linked List</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">22 Iterator</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">23 Functors and Imposter Syndrome</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">24 Recursion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">25 BST and Maps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">280 midterm cheatsheet</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">umich-eecs280-lec-notes-ch</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">04 Debuggers</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="toc">
+<ul>
+<li><a href="#4-debuggers">4 Debuggers</a><ul>
+<li><a href="#41-debugging-basis">4.1 Debugging Basis</a><ul>
+<li><a href="#411-breakpoint">4.1.1 Breakpoint 设置间断点</a></li>
+<li><a href="#412-step-over">4.1.2 Step over 运行一行</a></li>
+<li><a href="#413-inspect">4.1.3 Inspect 查看变量</a></li>
+<li><a href="#414-step-intoout">4.1.4 Step Into/Out 查看源码</a></li>
+<li><a href="#415-continue">4.1.5 Continue 快进到下一个间断点</a></li>
+</ul>
+</li>
+<li><a href="#42-debug-console">4.2 Debug Console</a></li>
+<li><a href="#43-address-sanitizer">4.3 Address Sanitizer 地址检查器</a><ul>
+<li><a href="#431-leak-checking">4.3.1 Leak Checking</a></li>
+</ul>
+</li>
+<li><a href="#44-assertions">4.4 Assertions</a></li>
+<li><a href="#45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</a><ul>
+<li><a href="#451-cl-debugging">4.5.1 CL Debugging 命令</a></li>
+<li><a href="#452-input-redirection">4.5.2 Input Redirection</a></li>
+<li><a href="#453-arguments-and-optins">4.5.3 Arguments and optins</a></li>
+</ul>
+</li>
+<li><a href="#46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</a><ul>
+<li><a href="#461-debug-logging">4.6.1 Debug Logging 额外输出</a></li>
+<li><a href="#462-conditional-breakpoint">4.6.2 Conditional Breakpoint</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="4-debuggers">4 Debuggers</h1>
+<p>本段演示我们使用下面中这段代码:</p>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+double sum (const vector&lt;double&gt; &amp;data) {
+  double total = 0;
+  for (size_t i=0; i&lt;data.size(); ++i) {
+    total += data[i];
+  }
+  return total;
+}
+
+int main() {
+  vector&lt;double&gt; data;
+  data.push_back(10);
+  data.push_back(20);
+  data.push_back(30);
+  cout &lt;&lt; &quot;sum(data) = &quot; &lt;&lt; sum(data) &lt;&lt; endl;
+}
+</code></pre>
+<h2 id="41-debugging-basis">4.1 Debugging Basis</h2>
+<p><img src="C:\Users\19680\Documents\GitHub\23W-EECS-280\Assets\image-20231223020225955.png" alt="image-20231223020225955" style="zoom: 50%;" /></p>
+<p>大部分 debugger 都支持以下的功能. </p>
+<h3 id="411-breakpoint">4.1.1 Breakpoint 设置间断点</h3>
+<p>Set a breakpoint by clicking to the left of a line number.  A breakpoint 表示 debug 运行到这里停止. 这是 debug 的开端，就是从 breakpoint 开始可以逐行 debug</p>
+<p><img src="Assets\image-20231223015901433.png" alt="image-20231223015901433" style="zoom:67%;" /></p>
+<h3 id="412-step-over">4.1.2 Step over 运行一行</h3>
+<p><img src="Assets\image-20240127175313572.png" alt="image-20240127175313572" style="zoom:67%;" /></p>
+<p>step over 就是继续运行一行的意思. 从 breakpoint 开始，我们每 stepover 一下就是运行一行.</p>
+<h3 id="413-inspect">4.1.3 Inspect 查看变量</h3>
+<p><img src="Assets\image-20240127175436792.png" alt="image-20240127175436792" style="zoom:67%;" /></p>
+<p>我们 stepover 的时候，左边的 local variables 会更新. 这个时候可以点开里面的数据进行 inspect，查看运行这一行之后的状态.</p>
+<p>下面还能检查 call stack. 点击 call stack 会进入该函数的 stack frame 里面查看 varibles.</p>
+<p><img src="Assets\image-20240127182545862.png" alt="image-20240127182545862" style="zoom:67%;" /></p>
+<h3 id="414-step-intoout">4.1.4 Step Into/Out 查看源码</h3>
+<p><img src="Assets\image-20240127180124552.png" alt="image-20240127180124552" style="zoom:67%;" /></p>
+<p>Step into 会直接进入这一行使用的函数的源代码；如果查看的是库函数，会直接进入C++的库源文件中进行查看. 如果是自己写的函数，会到自己的函数这里.</p>
+<p><img src="Assets\image-20240127180059028.png" alt="image-20240127180059028" style="zoom:67%;" /></p>
+<p>然后用 Step out 可以回到我们的文件.</p>
+<p><img src="Assets\image-20240127180113277.png" alt="image-20240127180113277" style="zoom:67%;" /></p>
+<h3 id="415-continue">4.1.5 Continue 快进到下一个间断点</h3>
+<p><img src="Assets\image-20240127180322821.png" alt="image-20240127180322821" style="zoom:67%;" /></p>
+<p>Continue 可以直接快进运行到现在的位置的下一个 breakpoint.</p>
+<h2 id="42-debug-console">4.2 Debug Console</h2>
+<p>如果我们现在在进行一个 Matrix 的 debugging, 我们看到了 call stack 中的一个 ptr 变量的地址，但是不知道它指的是 Matrix 中的第几个 entry.</p>
+<p>那么我们可以在 Debug Console 中输入 <code>ptr - mat-&gt;data</code> 来进行获取.</p>
+<p><img src="Assets\image-20240127183426089.png" alt="image-20240127183426089" style="zoom: 80%;" /></p>
+<p><img src="Assets\image-20240127183456621.png" alt="image-20240127183456621"  /></p>
+<p>Debug Console 中可以输入任何 C++ expression，甚至包括 function call.</p>
+<p><img alt="image-20240127183546638" src="Assets/image-20240127183546638.png" /></p>
+<h2 id="43-address-sanitizer">4.3 Address Sanitizer 地址检查器</h2>
+<p>We recommend enabling the <strong>address sanitizer 地址错误检查器</strong> and <strong>undefined behavior sanitizer 未定义行为检查器</strong>. These will help you find memory errors like going off the end of an array or vector.</p>
+<ol>
+<li>首先编辑 <code>Makefile</code> 添加这些 <code>CXXFLAGS</code>. </li>
+</ol>
+<p><strong>WSL or Linux:</strong> Add compiler flags (1) <code>-fsanitize=address</code>, (2) <code>-fsanitize=undefined</code>, (3) <code>-D_GLIBCXX_DEBUG</code>.  For example:</p>
+<pre><code class="language-makefile">CXXFLAGS = --std=c++17 -Wall -Werror -pedantic -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
+</code></pre>
+<p><strong>macOS:</strong>  Add compiler flags (1) <code>-fsanitize=address</code>, (2) <code>-fsanitize=undefined</code>.  (ma cOS不添加 <code>-D_GLIBCXX_DEBUG</code>.) For example:</p>
+<pre><code class="language-makefile">CXXFLAGS = --std=c++17 -Wall -Werror -pedantic -g -fsanitize=address -fsanitize=undefined
+</code></pre>
+<p>最后效果是：</p>
+<pre><code class="language-makefile">CXX ?= g++
+CXXFLAGS ?= --std=c++17 -Wall -Werror -pedantic -g
+
+# Add sanitizer flags for identifying undefined behavior.  The flags are
+# different on macOS (AKA Darwin) and Windows/WSL/Linux.
+UNAME := $(shell uname -s)
+ifeq &quot;$(UNAME)&quot; &quot;Darwin&quot;
+    CXXFLAGS += -fsanitize=address -fsanitize=undefined
+else
+    CXXFLAGS += -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
+endif
+
+</code></pre>
+<ol>
+<li>在 <code>launch.json</code> 中进行添加 address sanitizer 的 arguments.</li>
+</ol>
+<p><strong>For MacOS</strong>: 编辑 <code>"env"</code> property in your <code>launch.json</code>. 如果和下面这个不一样就replace it.  如果没有就添加下面这行到 <code>"args"</code> property.</p>
+<pre><code class="language-json">  &quot;env&quot;: {
+      &quot;ASAN_OPTIONS&quot;: &quot;abort_on_error=1:detect_leaks=0&quot;
+  },
+</code></pre>
+<p><strong>For WSL/Linux:</strong> 编辑 <code>"environment"</code> property in your <code>launch.json</code>. 如果和下面这个不一样就 replace it. 如果没有就添加下面这行到 <code>"args"</code> property.</p>
+<pre><code class="language-json">  &quot;environment&quot;: [
+    {
+      &quot;name&quot;: &quot;ASAN_OPTIONS&quot;,
+      &quot;value&quot;: &quot;abort_on_error=1:detect_leaks=0&quot;
+    }
+  ],
+</code></pre>
+<ol>
+<li>当 address sanitizer 发现 error 时会显示一页机器码，这没什么用而且很烦人. 关掉的方法是 Code &gt; Settings &gt; Settings&gt; set the <code>lldb.showDisassembly</code> option to <code>never</code>.</li>
+</ol>
+<h3 id="431-leak-checking">4.3.1 Leak Checking</h3>
+<p>address sanitzer 还可以用来检测 memory leak. 但是仅限于 WSL/Linux. </p>
+<p>macOS 要在 shell 里面在 make 后加入一行 </p>
+<pre><code class="language-shell">make main.exe
+MallocStackLogging=1 leaks -quiet -atExit -- ./main.exe
+</code></pre>
+<p>注意这个检测器和 address sanitizer 不兼容 (因而还要把 makefile 里面的 address sanitizer 去掉).</p>
+<p>这样子在运行 exe 文件的时候就会告诉你 memory leaking 的问题.</p>
+<pre><code class="language-makefile">make main.exe
+./main.exe
+# Hello Leaks!
+
+# =================================================================
+# ==1905936==ERROR: LeakSanitizer: detected memory leaks
+
+# Direct leak of 4 byte(s) in 1 object(s) allocated from:
+    #0 0x7f54a90ae7b0 in operator new(unsigned long) (/lib64/libasan.so.5+0xf17b0)
+    #1 0x400a73 in main /home/awdeorio/leakcheck/main.cpp:6
+    #2 0x7f54a8303cf2 in __libc_start_main (/lib64/libc.so.6+0x3acf2)
+
+# SUMMARY: AddressSanitizer: 4 byte(s) leaked in 1 allocation(s).
+</code></pre>
+<h2 id="44-assertions">4.4 Assertions</h2>
+<p>The <code>&lt;cassert&gt;</code> header defines an <code>assert()</code> macro，我们传给它布尔参数作为 condition：</p>
+<ul>
+<li>如果 condition is true, nothing happens.</li>
+<li>如果 condition is false, the program <strong>crashes immediately.</strong></li>
+</ul>
+<pre><code class="language-c++">#include &lt;cassert&gt;
+
+int main() {
+  int x = 2;
+  int y = 5;
+  assert(x + 3 == y); // true, all good :)
+  assert(x &gt; y); // false, crash!! (╯°□°)╯︵ ┻━┻
+}
+</code></pre>
+<p>terminal 会显示错误：</p>
+<pre><code class="language-shell">test.exe: test.cpp:7: int main(): Assertion `x &gt; y' failed.
+Aborted
+</code></pre>
+<p>这可以检测一些 precondition, invariant 等.</p>
+<h2 id="45-command-line-debuggersgbdlldb">4.5 Command-Line Debuggers(gbd,lldb)</h2>
+<p>IDE 里面集成了 debugging 的流程，但是我们也可以在 terminal 直接用 gdb/llbd 来进行 debug.</p>
+<p>但是这之前我们首先要用 g++ 来 compile 完 exe 文件.</p>
+<h3 id="451-cl-debugging">4.5.1 CL Debugging 命令</h3>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>what it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>b main</code></td>
+<td><strong>breakpoint</strong> on main function</td>
+</tr>
+<tr>
+<td><code>b 13</code></td>
+<td><strong>breakpoint</strong> on line 13 of current file</td>
+</tr>
+<tr>
+<td><code>b main.cpp:13</code></td>
+<td><strong>breakpoint</strong> on line 13 of main.cpp</td>
+</tr>
+<tr>
+<td><code>r</code></td>
+<td><strong>run</strong> or rerun</td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td>list a few lines of code</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td><strong>step over</strong> (next)</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td><strong>step into</strong></td>
+</tr>
+<tr>
+<td><code>up</code></td>
+<td><strong>step out</strong> (up)</td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td><strong>continue</strong></td>
+</tr>
+<tr>
+<td><code>p myvar</code></td>
+<td>print variable <code>myvar</code></td>
+</tr>
+<tr>
+<td><code>refresh</code></td>
+<td>refresh TUI view</td>
+</tr>
+<tr>
+<td><code>bt</code></td>
+<td>backtrace, useful for segfaults</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td><strong>quit</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="452-input-redirection">4.5.2 Input Redirection</h3>
+<p>自动化输入</p>
+<p>gdb:</p>
+<pre><code class="language-shell">gdb main.exe
+...
+(gdb) r &lt; main_test.in
+...
+</code></pre>
+<p>而 lldb 要复杂一点：</p>
+<pre><code class="language-shell">lldb main.exe
+...
+(lldb) settings set target.input-path main_test.in
+(lldb) r
+...
+
+</code></pre>
+<h3 id="453-arguments-and-optins">4.5.3 Arguments and optins</h3>
+<p>我们之前在 VSCode 里在 <code>launch.json</code> 里面放 arguments and options，那么当然也可以直接用 command 实现.</p>
+<pre><code class="language-shell">./main.exe train_small.csv test_small.csv --debug
+</code></pre>
+<ul>
+<li><code>main.exe</code> is the name of the program</li>
+<li><code>train_small.csv</code> and <code>test_small.csv</code> are arguments</li>
+<li><code>--debug</code> is an option</li>
+</ul>
+<h2 id="46-more-pro-tips-for-debugging">4.6 More Pro Tips for debugging</h2>
+<h3 id="461-debug-logging">4.6.1 Debug Logging 额外输出</h3>
+<p>在一些循环中我们发现异常，可以专门写一些额外的 output 用以 debug.</p>
+<p><img src="Assets\image-20240127184113556.png" alt="image-20240127184113556" style="zoom:80%;" /></p>
+<p><img src="Assets\image-20240127184138457.png" alt="image-20240127184138457"  /></p>
+<p>专门加一些话用来 Debug，并且加上标识来和普通的输出区分开.</p>
+<p><img alt="image-20240127184246208" src="Assets/image-20240127184246208.png" /></p>
+<h3 id="462-conditional-breakpoint">4.6.2 Conditional Breakpoint</h3>
+<p>接上一条，我们可以人为地加一些 if 语句来 debug，并且把 BreakPoint 放在 if 语句的内部时，就可以快速知道某一时刻某个时刻变量的值是不是预期的值.</p>
+<p>这样就可以一眼检测某个时刻某个 variable 的值是不是我们想要的值，这样不仅可以 debug 还可以顺便 testing. </p>
+<p><img alt="image-20240127184707869" src="Assets/image-20240127184707869.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="04-Debuggers.html" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="05-Version-Control-%28git%29.html" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="04-Debuggers.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="05-Version-Control-%28git%29.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

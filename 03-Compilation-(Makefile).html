@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Overview - umich-eecs280-lec-notes-ch</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "03-Compilation-(Makefile).md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> umich-eecs280-lec-notes-ch
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">01 Command Line Interface (CLI)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="01-Command-Line%20Interface-%28CLI%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">02 IDEs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">03 Compilation (Makefile)</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31-makefile">3.1 MakeFile 语法规则</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-variable">3.2 Variable 变量</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#33-example">3.3 Example</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#331-source-files">3.3.1 Source files</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#332-command-line-compilation">3.3.2 command line compilation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#333-makefile-compilation">3.3.3 Makefile compilation</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31-makefile">3.1 MakeFile 语法规则</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-variable">3.2 Variable 变量</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#33-example">3.3 Example</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#331-source-files">3.3.1 Source files</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#332-command-line-compilation">3.3.2 command line compilation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#333-makefile-compilation">3.3.3 Makefile compilation</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31-makefile">3.1 MakeFile 语法规则</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-variable">3.2 Variable 变量</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#33-example">3.3 Example</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#331-source-files">3.3.1 Source files</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#332-command-line-compilation">3.3.2 command line compilation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#333-makefile-compilation">3.3.3 Makefile compilation</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31-makefile">3.1 MakeFile 语法规则</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-variable">3.2 Variable 变量</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#33-example">3.3 Example</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#331-source-files">3.3.1 Source files</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#332-command-line-compilation">3.3.2 command line compilation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#333-makefile-compilation">3.3.3 Makefile compilation</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">04 Debuggers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">05 Version Control (git)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">06 Text Editors (emacs)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">07 Call Stack Procedural Abstraction and Unit Tests</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">08 Pointers and Arrays</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">09 const keyword</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="09-const-keyword.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="09-const-keyword.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10 Compound objects, ADT and Dynamic Allocation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11 C strings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12 Stream and IO</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13 ADT in C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14 Derived Classes and Inheritance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15 Polymorphism</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">16 ContainerADT I</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">17 ContainerADT II</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">18 Memory Model and Dynamic Memory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">19 Managing Dynamic Memory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">20 Deep Copies and the Big Three</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">21 Linked List</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">22 Iterator</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">23 Functors and Imposter Syndrome</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">24 Recursion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">25 BST and Maps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">280 midterm cheatsheet</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">umich-eecs280-lec-notes-ch</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">03 Compilation (Makefile)</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="3-c-compilation-makefiles">3 C++ Compilation (Makefiles)</h1>
+<p>我们可以在 working directory 中输入指令来用 g++ compiler 手动制作 <code>.exe</code> 文件.</p>
+<pre><code class="language-shell">g++ -Wall -Werror -pedantic -g --std=c++17 -Wno-sign-compare -Wno-comment main.cpp -o main.exe
+</code></pre>
+<p>但是如果程序的文件关系比较多，先后编译顺序手写就很麻烦. 因而我们把指令写进一个 <code>Makefile</code> 文件来 automate 这个过程.</p>
+<p><code>make</code> 指令会读取为 <code>Makefile</code> 文件，根据里面的指令来制作 <code>.exe</code> 文件. </p>
+<p>280并不要求手搓 Makefile, 只需要能看懂 Makefile 并修改其中的一些命令依赖就可以了. 以后再学习 Makefile 文件的编写以及通过 Cmake 工具生成 Makefile 文件.</p>
+<h2 id="31-makefile">3.1 MakeFile 语法规则</h2>
+<p>我们知道，C/C++ Source Code 首先会生成 obj 文件 (<code>.o</code>), 然后 <code>.o</code> 文件会被编译成 <code>.exe</code> 文件.</p>
+<pre><code class="language-makefile">target... : prerequisite...
+    recipe1...
+    (command1...
+    command2...)
+</code></pre>
+<ol>
+<li><strong>target (目标文件)</strong>: 本条规则要生成的文件, 比如 <code>main.exe</code>. 如果 target 文件的更新时间晚于 prerequisite 的更新时间，则说明 prerequisite 没有改动，target 不需要重新编译; 否则会进行重新编译并更新target.</li>
+<li><strong>prerequisite (依赖文件)</strong>: used as input to create the target, 比如 <code>main.cpp</code>. 即目标文件由哪些文件生成.</li>
+<li><strong>recipe (配方)</strong>：由 prerequisite 生成 target 的 commands, 比如 <code>g++ main.cpp -o main.exe</code>.  <strong>注意每条命令要换行，且每条命令之前必须有一个tab保持缩进，这是语法要求 (有一些编辑工具默认tab为4个空格，会造成Makefile语法错误</strong>).</li>
+</ol>
+<blockquote>
+<p>具体例子：</p>
+<p><code>makefile
+main.exe: main.cpp
+  g++ main.cpp -o main.exe</code></p>
+</blockquote>
+<h2 id="32-variable">3.2 Variable 变量</h2>
+<p>一个 variable 可以帮助减少 code duplication 从而起到简化作用. 比如要生成多个 <code>.exe</code> 文件，于是我们给编译命令 (<code>g++</code> 编译器和它的flag) 用 variables (<code>CXX</code> 和 <code>CXXFLAGS</code>) 来指代.</p>
+<pre><code class="language-makefile">CXX ?= g++
+CXXFLAGS ?= -Wall -Werror -pedantic -g --std=c++17 -Wno-sign-compare -Wno-comment
+
+main.exe: main.cpp
+    $(CXX) $(CXXFLAGS) main.cpp -o main.exe
+
+unit_tests.exe: unit_tests.cpp unit.cpp
+
+    $(CXX) $(CXXFLAGS) unit_tests.cpp unit.cpp -o unit_tests.exe
+</code></pre>
+<p>这些变量名都是标准的. 至于格式和其他东西这里先不学了，参见 GNU make 官方文档 https://www.gnu.org/software/make/manual/make.html#Makefile-Names 以及中译 https://file.elecfans.com/web1/M00/7D/E7/o4YBAFwQthSADYCWAAT9Q1w_4U0711.pdf </p>
+<p><img src="Assets\image-20231222155648516.png" alt="image-20231222155648516" style="zoom:80%;" /></p>
+<p><img src="Assets\image-20231222155607597.png" alt="image-20231222155607597" style="zoom:80%;" /></p>
+<h2 id="33-example">3.3 Example</h2>
+<h3 id="331-source-files">3.3.1 Source files</h3>
+<p>(1) <code>main.cpp</code>: </p>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  cout &lt;&lt; &quot;Hello World!\n&quot;;
+}
+</code></pre>
+<p>(2) <code>main_test.in</code>:</p>
+<pre><code>this program doesn't read stdin,
+so this text doesn't matter
+</code></pre>
+<p>(3) <code>main_test.out.correct</code>:</p>
+<pre><code>Hello World!
+</code></pre>
+<h3 id="332-command-line-compilation">3.3.2 command line compilation</h3>
+<p>我们可以写 command 手动用 g++ 编译这段.</p>
+<pre><code class="language-shell">g++ -Wall -Werror -pedantic -g --std=c++17 -Wno-sign-compare -Wno-comment main.cpp -o main.exe
+./main.exe
+# Hello World!
+rm main.exe
+
+./main.exe &lt; main_test.in &gt; main_test.out
+diff main_test.out main_test.out.correct
+# no output means the file matches
+</code></pre>
+<h3 id="333-makefile-compilation">3.3.3 <code>Makefile</code> compilation</h3>
+<p>而我们也可以创建一个 Makefile 文件来编译.</p>
+<p>(1) 代码结构:</p>
+<pre><code class="language-cmd">tree
+.
+├── Makefile
+└── main.cpp
+</code></pre>
+<p>(2) <code>Makefile</code>: </p>
+<pre><code class="language-makefile">CXX ?= g++
+CXXFLAGS ?= -Wall -Werror -pedantic -g --std=c++17 -Wno-sign-compare -Wno-comment
+
+# Run regression test
+test: main.exe
+    ./main.exe &lt; main_test.in &gt; main_test.out
+    diff main_test.out main_test.out.correct
+    echo PASS
+
+# Compile the main executable
+main.exe: main.cpp
+    $(CXX) $(CXXFLAGS) main.cpp -o main.exe
+
+# Remove automatically generated files
+clean :
+    rm -rvf *.exe *~ *.out *.dSYM *.stackdump
+</code></pre>
+<p>(3) command:</p>
+<pre><code class="language-shell">make main.exe   #(1) make exe using makefile
+./main.exe  #(2) run exe
+make test   #(3) run a test
+make clean  #(4) clean the generated files
+</code></pre>
+<p><img src="Assets\image-20231222105531992.png" alt="image-20231222105531992" style="zoom:80%;" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="03-Compilation-%28Makefile%29.html" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="04-Debuggers.html" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="03-Compilation-%28Makefile%29.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="04-Debuggers.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Overview - umich-eecs280-lec-notes-ch</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "01-Command-Line Interface-(CLI).md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> umich-eecs280-lec-notes-ch
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">01 Command Line Interface (CLI)</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#111-install-compiler">1.1.1 Install compiler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#113-install-cli-tools">1.1.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#114-use-cli-tools">1.1.4 Use CLI tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-install-wsl">1.2.1 Install WSL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#123-install-cli-tools">1.2.3 Install CLI tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-basic-commands">1.3 Basic Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">02 IDEs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="02-IDEs.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">03 Compilation (Makefile)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="03-Compilation-%28Makefile%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">04 Debuggers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="04-Debuggers.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">05 Version Control (git)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="05-Version-Control-%28git%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">06 Text Editors (emacs)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="06-Text-Editors-%28emacs%29.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">07 Call Stack Procedural Abstraction and Unit Tests</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">08 Pointers and Arrays</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="08-Pointers-and-Arrays.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">09 const keyword</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="09-const-keyword.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="09-const-keyword.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10 Compound objects, ADT and Dynamic Allocation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11 C strings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="11-C-strings.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12 Stream and IO</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="12-Stream-and-IO.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13 ADT in C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="13-ADT-in-C%2B%2B.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14 Derived Classes and Inheritance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="14-Derived-Classes-and-Inheritance.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15 Polymorphism</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="15-Polymorphism.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">16 ContainerADT I</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="16-ContainerADT-I.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">17 ContainerADT II</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="17-ContainerADT-II.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">18 Memory Model and Dynamic Memory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="18-Memory-Model-and-Dynamic-Memory.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">19 Managing Dynamic Memory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="19-Managing-Dynamic-Memory.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">20 Deep Copies and the Big Three</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="20-Deep-Copies-and-the-Big-Three.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">21 Linked List</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="21-Linked-List.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">22 Iterator</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="22-Iterator.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">23 Functors and Imposter Syndrome</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="23-Functors-and-Imposter-Syndrome.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">24 Recursion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="24-Recursion.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">25 BST and Maps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="25-BST-and-Maps.html">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">280 midterm cheatsheet</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="280-midterm-cheatsheet.html">Overview</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">umich-eecs280-lec-notes-ch</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">01 Command Line Interface (CLI)</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div class="toc">
+<ul>
+<li><a href="#1-command-line-interface-cli">1 Command Line Interface (CLI)</a><ul>
+<li><a href="#11-mac-os-cli-tools-installation">1.1 Mac OS CLI tools Installation</a><ul>
+<li><a href="#111-install-compiler">1.1.1 Install compiler</a></li>
+<li><a href="#112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</a></li>
+<li><a href="#113-install-cli-tools">1.1.3 Install CLI tools</a></li>
+<li><a href="#114-use-cli-tools">1.1.4 Use CLI tools</a></li>
+</ul>
+</li>
+<li><a href="#12-windows-subsystem-for-linux-wsl-installation">1.2 Windows Subsystem for Linux (WSL) Installation</a><ul>
+<li><a href="#121-install-wsl">1.2.1 Install WSL</a></li>
+<li><a href="#122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</a></li>
+<li><a href="#123-install-cli-tools">1.2.3 Install CLI tools</a></li>
+<li><a href="#124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</a></li>
+<li><a href="#125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</a></li>
+<li><a href="#126-pitfalls">1.2.6 Pitfalls(需要注意的隐患)</a></li>
+</ul>
+</li>
+<li><a href="#13-basic-commands">1.3 Basic Commands</a><ul>
+<li><a href="#131-ls-print-files-and-directories-in-working-directory">1.3.1 ls: print files and directories in working directory</a></li>
+<li><a href="#131-pro-tip-colorize-the-output-of-ls-and-prompt">1.3.1* Pro-tip: Colorize the output of ls and prompt 定制颜色</a><ul>
+<li><a href="#for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#-bash">-bash</a></li>
+<li><a href="#create-file-if-it-doesnt-exist">Create file if it doesn't exist</a><ul>
+<li><a href="#132-tree-directory">1.3.2 tree: 以树状打印directory架构</a></li>
+<li><a href="#133-pwd-print-working-directory">1.3.3 pwd: print working directory</a></li>
+<li><a href="#134-mkdir-make-directory">1.3.4 mkdir: make directory</a></li>
+<li><a href="#135-touch-create-file">1.3.5 touch: create file</a></li>
+<li><a href="#136-rm-rm-rf-remove">1.3.6 rm, rm -rf: remove</a></li>
+<li><a href="#137-cd-change-directory">1.3.7 cd: change directory 更改工作目录</a></li>
+<li><a href="#138-cp-copy-and-paste-a-file">1.3.8 cp: copy and paste a file</a></li>
+<li><a href="#139-open-wslview-macwsl">1.3.9 open / wslview: Mac/Wsl打开文件</a></li>
+<li><a href="#1310-wget-internet">1.3.10 wget: 下载来自Internet的文件</a></li>
+<li><a href="#1311-tar">1.3.11 tar: 解压压缩包</a></li>
+<li><a href="#1312-diff">1.3.12 diff: 比较文件</a></li>
+<li><a href="#1313-cat">1.3.13 cat: 打印文件内容</a></li>
+<li><a href="#1314-grep-file">1.3.14 grep: 在(多个)file中搜索</a></li>
+<li><a href="#14-file-directory-path">1.4 File, Directory, Path</a><ul>
+<li><a href="#141-current-directory">1.4.1 Current directory .</a></li>
+<li><a href="#142-absolute-relative-path">1.4.2 Absolute &amp; Relative Path(绝对&amp;相对路径)</a></li>
+<li><a href="#143-parent-directory">1.4.3 Parent directory ..</a></li>
+<li><a href="#144-home-directory">1.4.4 Home directory ~</a></li>
+<li><a href="#145-root-directory">1.4.5 Root directory /</a></li>
+<li><a href="#146-glob">1.4.6 Glob *</a></li>
+</ul>
+</li>
+<li><a href="#15-redirection">1.5 Redirection</a><ul>
+<li><a href="#151-pipe">1.5.1 Pipe |:</a></li>
+<li><a href="#152-input-redirection">1.5.2 Input redirection &lt;: 用文件作为程序输入</a></li>
+<li><a href="#153-output-redirection">1.5.3 Output redirection &gt;: 储存程序的输出</a></li>
+</ul>
+</li>
+<li><a href="#16-useful-tips">1.6 Useful Tips</a><ul>
+<li><a href="#161-clear-clear-the-terminal">1.6.1 clear: clear the terminal</a></li>
+<li><a href="#162-tab-complete">1.6.2 Tab complete</a></li>
+<li><a href="#163">1.6.3 ↑和↓</a></li>
+<li><a href="#164-customize-prompt-prompt">1.6.4 Customize prompt: prompt改颜色</a></li>
+</ul>
+</li>
+<li><a href="#17-shell-scripting">1.7 Shell Scripting(脚本)</a><ul>
+<li><a href="#171-creating-a-shell-script">1.7.1 Creating a shell script</a></li>
+<li><a href="#172-adding-an-executable-bit">1.7.2 Adding an executable bit</a></li>
+<li><a href="#173">1.7.3 注意事项</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="1-command-line-interface-cli">1 Command Line Interface (CLI)</h1>
+<p>The <strong><em>GUI</em> (Graphic User Interface)</strong> is a <strong>“point and click” way</strong> to interact with a computer. The <strong>Windows File Explorer</strong> and <strong>macOS Finder</strong> are examples of GUIs.</p>
+<p>The <strong><em>CLI</em> (Command Line Interface)</strong> is a <strong>text-based way</strong> to interact with a computer. </p>
+<p>The terminal is another name for the CLI. </p>
+<p>mac中，CLI就是terminal，terminal就是CLI； Windows Subsystem for Linux (WSL) 中叫做ubantu (没错就是ubantu server的虚拟机版本). </p>
+<p>The CLI is fast, easy to automate, and easy to use remotely.</p>
+<p><img src="Assets/Screenshot 2023-12-09 at 04.24.05.png" alt="Screenshot 2023-12-09 at 04.24.05" style="zoom:80%;" /></p>
+<h2 id="11-mac-os-cli-tools-installation"><strong>1.1 Mac OS CLI tools Installation</strong></h2>
+<h3 id="111-install-compiler">1.1.1 Install compiler</h3>
+<p>Open the Terminal application which comes with macOS. Install a compiler.</p>
+<pre><code class="language-cmd">xcode-select --install
+</code></pre>
+<p><strong>Notice that this compiler is really Apple LLVM pretending to be <code>g++</code>. Your version might be different.</strong></p>
+<pre><code class="language-cmd">g++ --version
+#Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+# Apple LLVM version 9.0.0 (clang-900.0.38)
+# Target: x86_64-apple-darwin16.7.0
+#Thread model: posix
+# InstalledDir: /Library/Developer/CommandLineTools/usr/bin*/)
+</code></pre>
+<h3 id="112-install-homebrew-package-manager">1.1.2 Install Homebrew package manager</h3>
+<pre><code class="language-cmd">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
+</code></pre>
+<p>Homebrew installs to a non-standard location, <code>/opt/homebrew/</code>. </p>
+<p><strong>重要的一步：把homebrew加入环境变量：</strong></p>
+<p><strong>You’ll need to run the following to add Homebrew to your path:</strong></p>
+<pre><code class="language-cmd">echo 'eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;' &gt;&gt; ~/.zprofile
+</code></pre>
+<p>Check your install. Your version might be different.</p>
+<pre><code class="language-cmd">brew --version
+# 3Homebrew 3.6.14
+</code></pre>
+<p>Close your terminal and reopen your terminal.</p>
+<h3 id="113-install-cli-tools">1.1.3 Install CLI tools</h3>
+<p>Use the Homebrew package manager to install a few command line programs.</p>
+<pre><code class="language-cmd">brew install wget git tree
+</code></pre>
+<h3 id="114-use-cli-tools">1.1.4 Use CLI tools</h3>
+<p>前面已经说了，macOS所有的CLI就是在terminal中执行. 在terminal中写command时加上各种关键词就能使用各种CLI工具. </p>
+<p>在terminal中输入<code>zsh</code>，可以打开<strong>Zshell</strong>, which is typical on macOS.</p>
+<h2 id="12-windows-subsystem-for-linux-wsl-installation"><strong>1.2 Windows Subsystem for Linux (WSL) Installation</strong></h2>
+<p>The Windows Subsystem for Linux (WSL) runs an <strong>Ubuntu Linux guest virtual machine</strong> on your Windows host machine.</p>
+<p>When you see <code>$</code> in this tutorial, you should type into your shell the command that comes after the <code>$</code>.</p>
+<p>你看到<code>$</code>就说明在shell里面了</p>
+<h3 id="121-install-wsl">1.2.1 Install WSL</h3>
+<p>打开<strong>PowerShell</strong>并且<strong>run it as administrator</strong>. </p>
+<p>Check if WSL was already installed. </p>
+<p>如果看到这个，WSL is already installed.</p>
+<pre><code class="language-cmd">wsl -l -v
+#  NAME      STATE       VERSION
+#* Ubuntu    Stopped     2
+</code></pre>
+<p>如果看到WSL help text，WSL is not installed.</p>
+<pre><code class="language-cmd">wsl -l -v
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Usage: wsl.exe [Argument]
+# ...
+</code></pre>
+<p>如果没installed，install:</p>
+<pre><code class="language-powershell">wsl --install
+</code></pre>
+<blockquote>
+<p><strong>Pitfall:</strong> Make sure Windows Update is enabled and your machine is up-to-date. Settings &gt; Update and Security &gt; Windows Update.</p>
+<p><strong>Pitfall:</strong> If you still get an error from <code>wsl --install</code>, try the <a href="https://learn.microsoft.com/en-us/windows/wsl/install-manual">Manual installation steps</a>.</p>
+<p>For the Linux distribution, choose the latest version of Ubuntu LTS. At the time of this writing, that’s Ubuntu 22.04 LTS.</p>
+</blockquote>
+<p>安装好之后重启电脑，然后Start PowerShell as administrator, and check that the <code>VERSION</code> is 2. 如果显示powershell里输入 <code>wsl -l -v</code> 后version显示为1，那么要 <code>wsl --update</code>.</p>
+<h3 id="122-start-an-ubuntu-bash-shell">1.2.2 Start an Ubuntu Bash shell</h3>
+<p>在搜索栏搜索ubantu并打开. 这个时候你就在运行WSL的linux虚拟机的command line.</p>
+<p><img src="Assets/Screenshot 2023-12-09 at 04.02.54.png" alt="Screenshot 2023-12-09 at 04.02.54" style="zoom:67%;" /></p>
+<h3 id="123-install-cli-tools">1.2.3 Install CLI tools</h3>
+<p>进入WSL的linux虚拟机的command line之后，Use the <code>apt</code> package manager to install a few command line programs. <strong>虽然这是虚拟机，但是Linux系统里也是用的同样的 command</strong>.</p>
+<pre><code class="language-shell">sudo apt update
+sudo apt install g++ make rsync wget git ssh gdb python3 tree
+</code></pre>
+<h3 id="124-accessing-linux-files-from-windows">1.2.4 Accessing Linux files from Windows</h3>
+<p>点击Linux的icon. Navigate to your home directory: Linux &gt; Ubuntu &gt; home &gt; 你的用户名.</p>
+<p><img src="Assets/Screenshot 2023-12-09 at 16.23.59.png" alt="Screenshot 2023-12-09 at 16.23.59" style="zoom:67%;" /></p>
+<p>To open the File Explorer in any directory at the WSL (Ubuntu) Terminal:</p>
+<h3 id="125-accessing-windows-files-from-linux">1.2.5 Accessing Windows files from Linux</h3>
+<p>To access Windows files from Linux, navigate to <code>/mnt/c/</code>.</p>
+<p>cd就是change directory，就是更改当前的working directory为该文件夹. 如果不给出absolute path的话就是在当前的working directory进入其中的某个子文件夹.</p>
+<p>如果想要打开而不是进入某个文件夹/文件的话就是 <code>open</code> 以及 <code>wslview</code>. <code>open</code> 是MacOS的指令，<code>wslview</code> 是wsl的指令.</p>
+<pre><code class="language-cmd">cd /mnt/c/Users
+ls
+# ...(目录里的各种东西)
+cd 19680 #我的用户名
+ls 
+# ...(目录里的各种目录和文件, 包括Desktop和Documents)
+cd 'My Documents'
+...
+</code></pre>
+<p><img alt="2d4402702983d02fdf5ec114629a5a22" src="Assets/2d4402702983d02fdf5ec114629a5a22.PNG" /></p>
+<h3 id="126-pitfalls"><strong>1.2.6 Pitfalls(需要注意的隐患)</strong></h3>
+<ol>
+<li>Avoid Spaces in paths</li>
+</ol>
+<p>Avoid paths that contain spaces. Spaces causes problems with some command line tools.</p>
+<table>
+<thead>
+<tr>
+<th>Bad Example</th>
+<th>Good Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EECS 280/</code></td>
+<td><code>eecs280/</code></td>
+</tr>
+<tr>
+<td><code>Project 1 Stats/</code></td>
+<td><code>p1-stats/</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Project folder in Windows home directory</li>
+</ol>
+<p>WSL中Linux（Ubuntu）有一个独立的home directory. </p>
+<p>虽然我们讲了怎么在WSL中ubantu和windows互通文件，但是将代码存储在 Windows 主目录中可能会导致运行速度减慢，因为 WSL 使用network file share（网络文件共享）在 Windows 和 Linux 之间传输文件.</p>
+<table>
+<thead>
+<tr>
+<th>Bad Example</th>
+<th>Good Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/c/mnt/Users/awdeorio ...</code></td>
+<td><code>/home/awdeorio ...</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Root user</li>
+</ol>
+<p>避免在 WSL 中以 root 用户身份进行 everyday coding，因为有些程序在以root用户身份运行时无法正常工作. When you first installed Ubuntu, you should have been prompted to create a Linux username and password.</p>
+<h2 id="13-basic-commands"><strong>1.3 Basic Commands</strong></h2>
+<p>A <strong><em>file</em></strong> stores data like C++ source code (<code>main.cpp</code>) or plain text (<code>example.txt</code>).</p>
+<p>A <strong><em>directory</em></strong> contains files and other directories. It’s also called <strong>a folder</strong>. 也就是文件夹</p>
+<p>A <strong><em>path</em></strong> is the location of a file or directory. <strong>Sometimes we end a directory path with <code>/</code>.</strong>(有没有不重要) For example:</p>
+<pre><code>/Users/ohjun/Desktop/project/main.cpp
+/Users/ohjun/Desktop/project/stuff/
+</code></pre>
+<h3 id="131-ls-print-files-and-directories-in-working-directory">1.3.1 <code>ls</code>: print files and directories in working directory</h3>
+<p><code>ls</code> prints files and directories in the present working directory.</p>
+<pre><code class="language-cmd">ls
+# example.txt main.cpp stuff
+</code></pre>
+<h3 id="131-pro-tip-colorize-the-output-of-ls-and-prompt"><strong>1.3.1* Pro-tip:</strong> Colorize the output of <code>ls</code>  and prompt 定制颜色</h3>
+<h4 id="for-windowswsl-and-linux-bash-shell">for Windows/WSL and Linux (Bash shell):</h4>
+<blockquote>
+<p>Verify you’re using the Bash shell, which is typical on WSL Ubuntu Linux.</p>
+<p>```cmd
+echo $0</p>
+<h1 id="-bash">-bash</h1>
+<p>touch ~/.bash_profile  </p>
+<h1 id="create-file-if-it-doesnt-exist">Create file if it doesn't exist</h1>
+<p>wslview ~/.bash_profile
+alias ls='ls --color'
+```</p>
+<p><img src="Assets/d13b660daaea55b02692da4d367a1bf6.PNG" alt="d13b660daaea55b02692da4d367a1bf6" style="zoom:80%;" /></p>
+<p>for macOS (z shell):</p>
+<p><code>cmd
+echo $0
+touch ~/.zshrc  # Create file if it doesn't exist
+open ~/.zshrc
+alias ls='ls -G'</code></p>
+<p>prompt 的颜色也可以 customize</p>
+<p>For WSL, 通过 <code>~/.bash_profile</code> 打开 bash_profile 文件，然后在文件中输入:</p>
+<p><code>shell
+export PS1='\[\e[0;32m\][\u] \[\e[0;34m\]\w/ \[\e[01;34m\]$ \[\e[0m\]'</code></p>
+<p>For macOS, 通过 <code>~/.zshrc</code> 打开 zshrc 文件，然后在文件中输入:</p>
+<p><code>shell
+PROMPT='%F{green}[%n] %F{blue}%~%f %B%F{blue}$%f%b '</code></p>
+</blockquote>
+<h3 id="132-tree-directory">1.3.2 <code>tree</code>: 以树状打印directory架构</h3>
+<p><code>tree</code> recursively prints files and directories, which ilss useful for comparing your files against a project spec. 打印directory的架构</p>
+<pre><code class="language-cmd">tree
+.
+├── example.txt
+├── main.cpp
+└── stuff
+    └── hello.txt
+</code></pre>
+<blockquote>
+<p>如果新的系统没安装tree，这样安装</p>
+<p><code>cmd
+sudo apt install tree  # WSL, Linux</code></p>
+<p><code>cmd
+brew install tree      # macOS</code></p>
+</blockquote>
+<h3 id="133-pwd-print-working-directory">1.3.3 <code>pwd</code>: print working directory</h3>
+<p><code>pwd</code> 顾名思义也就是print working directory, 打印当前工作目录</p>
+<pre><code class="language-cmd">pwd
+# /Users/ohjun/Desktop/project
+</code></pre>
+<h3 id="134-mkdir-make-directory">1.3.4 <code>mkdir</code>: make directory</h3>
+<p><code>mkdir</code> 在当前的working directory creates a directory. 创造一个空目录(文件夹).</p>
+<pre><code class="language-cmd">mkdir myfolder
+</code></pre>
+<h3 id="135-touch-create-file">1.3.5 <code>touch</code>: create file</h3>
+<p><code>touch</code> creates an empty file. 创造一个空文件，并给它命名</p>
+<pre><code class="language-cmd">touch euchre.cpp
+</code></pre>
+<h3 id="136-rm-rm-rf-remove">1.3.6 <code>rm</code>, <code>rm -rf</code>: remove</h3>
+<p><code>rm</code> removes (deletes) a file. 删除文件</p>
+<p><code>rm -rf</code> removes a directory. 删除一整个文件夹</p>
+<pre><code class="language-cmd">rm euchre.cpp
+rm -rf stuff2/
+</code></pre>
+<p><strong>Files deleted by <code>rm</code> are gone forever. You cannot recover them from the Trash. 这和图形化界面里面的删除不一样！没有回收站，删了就是永久删了，一定要谨慎！</strong></p>
+<h3 id="137-cd-change-directory">1.3.7 <code>cd</code>: change directory 更改工作目录</h3>
+<p><code>cd</code> 顾名思义change directory. </p>
+<p>前面在Accessing Windows files from Linux中已经讲过了，如果不给出absolute path的话就是在当前的working directory进入其中的某个子文件夹.</p>
+<pre><code class="language-cmd">cd /mnt/c/Users
+ls
+# ...(目录里的各种东西)
+cd 19680 #我的用户名
+ls 
+# ...(目录里的各种目录和文件, 包括Desktop和Documents)
+cd 'My Documents'
+...
+</code></pre>
+<h3 id="138-cp-copy-and-paste-a-file">1.3.8 <code>cp</code>: copy and paste a file</h3>
+<p><code>cp</code> copies a file. 复制当前working directory中的一个文件到别的地方</p>
+<pre><code class="language-cmd">cp 1.cpp /mnt/c/Users/19680/Desktop #也可以用../..等等表示parent directiry，不用重新打一遍之前的目录
+</code></pre>
+<p><img src="Assets/9d6efb7e4edb7bb7aa96507f74c766a5.PNG" alt="9d6efb7e4edb7bb7aa96507f74c766a5"  /></p>
+<h3 id="139-open-wslview-macwsl">1.3.9 <code>open</code> / <code>wslview</code>: Mac/Wsl打开文件</h3>
+<p>前面Accessing Windows files from Linux写过了, macOS 中用 <code>open</code> 来opens a file or directory with the default application; WSL (Windows)中用 <code>wslview</code> 来opens a file or directory with the default application.</p>
+<p>如果没下载这个指令，还要下载才能用.</p>
+<p>eg:</p>
+<pre><code class="language-cmd">wslview 1.cpp
+</code></pre>
+<h3 id="1310-wget-internet">1.3.10 <code>wget</code>: 下载来自Internet的文件</h3>
+<p><code>wget</code> downloads a file from the internet.</p>
+<p>For example:</p>
+<pre><code class="language-cmd">wget https://eecs280staff.github.io/p1-stats/starter-files.tar.gz
+ls
+# starter-files.tar.gz
+</code></pre>
+<h3 id="1311-tar">1.3.11 <code>tar</code>: 解压压缩包</h3>
+<p><code>tar</code> unpacks an archive. 也就是解压一个压缩包.</p>
+<p>For example, unpack the starter files for EECS 280 project 1:</p>
+<pre><code class="language-cmd">tar -xvzf starter-files.tar.gz
+# starter-files/
+# ...
+tree
+#.
+├── starter-files
+│   ├── Makefile
+│   ├── main_test.in
+│   ├── main_test.out.correct
+│   ├── main_test_data.tsv
+│   ├── p1_library.cpp
+│   ├── p1_library.hpp
+│   ├── stats.hpp
+│   ├── stats_public_test.cpp
+│   └── stats_tests.cpp.starter
+└── starter-files.tar.gz
+</code></pre>
+<h3 id="1312-diff">1.3.12 <code>diff</code>: 比较文件</h3>
+<p><code>diff</code> compares two files. 如果没有output说明这两个file一模一样（除了名字）.</p>
+<p>比如下面就是比较 <code>main_test.out</code> 和 <code>main_test.out.correct</code> 这两个文件，结果一模一样，于是没有输出.</p>
+<pre><code class="language-cmd">diff main_test.out main_test.out.correct
+</code></pre>
+<h3 id="1313-cat">1.3.13 <code>cat</code>: 打印文件内容</h3>
+<p><code>cat</code> concatenates(串联) files and prints them.</p>
+<p>也就是你cat几个file就会串联地输出这几个file的内容.</p>
+<p>For example, 随便在 <code>1.cpp</code> 里面写点东西</p>
+<pre><code class="language-cmd">cat 1.cpp
+</code></pre>
+<p><img src="Assets/038bdae524139b780536fdb13a68a002.PNG" alt="038bdae524139b780536fdb13a68a002" style="zoom:80%;" /></p>
+<h3 id="1314-grep-file">1.3.14 <code>grep</code>: 在(多个)file中搜索</h3>
+<p><code>grep</code>， 顾名思义，就是“<em>g</em>lobally search for a <em>re</em>gular expression and <em>p</em>rint matching lines”.（这个好像不太顾名思义，）</p>
+<pre><code class="language-cmd">grep vector main.cpp
+# #include &lt;vector&gt;
+#       vector&lt;double&gt; v = extract_column(filename, column_name);
+#         vector&lt;vector&lt;double&gt; &gt; summary = summarize(v);
+</code></pre>
+<p>再比如更加高级：Search for <code>vector</code> in 当前working directory，也就是这个项目中所有的 <code>.cpp</code> files. terminal会自动告诉你哪行是在哪个 <code>.cpp</code> 文件，因而非常好用.</p>
+<pre><code class="language-cmd">grep vector *.cpp
+# main.cpp:#include &lt;vector&gt;
+# main.cpp:  vector&lt;double&gt; v = extract_column(filename, column_name);
+# main.cpp:  vector&lt;vector&lt;double&gt; &gt; summary = summarize(v);
+# stats.cpp:#include &lt;vector&gt;
+# ...
+# stats_tests.cpp:#include &lt;vector&gt;
+# ...
+</code></pre>
+<h2 id="14-file-directory-path"><strong>1.4 File, Directory, Path</strong></h2>
+<h3 id="141-current-directory">1.4.1 Current directory <code>.</code></h3>
+<p><code>.</code> refers to the current directory.</p>
+<p>打开current directory的方法:</p>
+<p>macOS:</p>
+<pre><code class="language-shell">open .
+</code></pre>
+<p>Windows/WSL: </p>
+<pre><code class="language-shell">wslview .
+</code></pre>
+<h3 id="142-absolute-relative-path">1.4.2 Absolute &amp; Relative Path(绝对&amp;相对路径)</h3>
+<p>An <em>absolute path</em> starts from the root directory <code>/</code>.</p>
+<blockquote>
+<p>Eg:</p>
+<p><code>cmd
+/usr/local/bin/python3
+/usr/bin/python3</code></p>
+</blockquote>
+<p>A <em>relative path</em> starts from the current directory.</p>
+<blockquote>
+<p>Eg:</p>
+<p><code>cmd
+./main.exe</code></p>
+</blockquote>
+<h3 id="143-parent-directory">1.4.3 Parent directory <code>..</code></h3>
+<p>父目录：原目录的上一级目录</p>
+<p><code>..</code> refers to the parent directory of the current directory.</p>
+<pre><code class="language-cmd">pwd
+# /Users/ohjun/Desktop/project/stuff
+cd ..
+pwd
+# /Users/ohjun/Desktop/project
+</code></pre>
+<h3 id="144-home-directory">1.4.4 Home directory <code>~</code></h3>
+<p><code>~</code> refers to your home directory.</p>
+<pre><code class="language-cmd">cd ~
+pwd
+# /Users/ohjun
+ls
+# Applications Pictures Desktop ...
+</code></pre>
+<h3 id="145-root-directory">1.4.5 Root directory <code>/</code></h3>
+<p><code>/</code> refers to the root directory. This is the top-most directory in your file system, and has no parent. 根目录是文件系统中最顶层的目录，它没有父目录.</p>
+<pre><code class="language-cmd">ls /
+# Applications cores sbin ...
+</code></pre>
+<h3 id="146-glob">1.4.6 Glob <code>*</code></h3>
+<p>A <em>glob</em> is a wildcard path that may match multiple paths. The <code>*</code> symbol matches any string.</p>
+<p>可以联想一下python里面的 <code>import 什么什么.*</code>，就是import这个包里所有东西.</p>
+<p>下面就是一个示范，把starter_files这个directory里面所有东西都copy and paste到当前的working directory中.</p>
+<pre><code class="language-cmd">cp -v starter_files/* .
+# './Makefile'
+# './main_test.in'
+# ...
+</code></pre>
+<h2 id="15-redirection"><strong>1.5 Redirection</strong></h2>
+<h3 id="151-pipe">1.5.1 Pipe <code>|</code>:</h3>
+<p>The <em>pipe</em> (<code>|</code>) sends the output of the left command to the input of the right command.</p>
+<p>把左边命令的输出放进右边命令的输入，然后执行右边命令.</p>
+<p>看着有点绕. Here’s an example that searches for <code>.cpp</code> files. The output of <code>ls</code> is piped to the input of <code>grep</code>. 这里是把 <code>ls</code> 也就是打印 working directory 中所有文件的结果弄成一个临时文件让grep查查里面有几个 <code>.cpp</code>, 巧妙地查询了当前 directory中 cpp 文件的数量.</p>
+<pre><code class="language-cmd">$ ls | grep cpp
+main.cpp
+stats.cpp
+stats_tests.cpp
+</code></pre>
+<h3 id="152-input-redirection">1.5.2 Input redirection <code>&lt;</code>: 用文件作为程序输入</h3>
+<p><em>Input redirection</em> sends the contents of a file to the input of a program.</p>
+<p>Input redirection is useful for automating program input. 这是程序自动化的重要内容.</p>
+<p><strong>非常逆天的一件事情是C++中我们知道 <code>&lt;&lt;</code> 是outstream的方向，<code>&gt;&gt;</code> 是instream的方向. 而terminal里面是反的，<code>&lt;</code>才是input，<code>&gt;</code> 才是output. </strong>可能因为unix系统诞生的时候C++还远没有出现.</p>
+<p>Here’s an example program.</p>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+  cout &lt;&lt; &quot;What's your name?&quot; &lt;&lt; endl;
+  string name;
+  cin &gt;&gt; name;
+  cout &lt;&lt; &quot;Hello &quot; &lt;&lt; name &lt;&lt; &quot;!\n&quot;;
+}
+</code></pre>
+<p>我们可以直接在terminal里面用编译器来跑程序，创建一个exe文件来跑程序，用terminal作为输入和输出流的工具:</p>
+<pre><code class="language-cmd">g++ main.cpp -o main.exe
+./main.exe
+# What's your name?
+# Drew (input)
+# Hello Drew!
+</code></pre>
+<p>Create a file with user input. We’ll call it <code>main_test.in</code>.</p>
+<pre><code class="language-tex">Drew
+</code></pre>
+<p>Redirect file <code>main_test.in</code> to stdin of <code>main.exe</code>. We have automated user input.</p>
+<pre><code class="language-cmd">g++ main.cpp -o main.exe
+./main.exe &lt; main_test.in
+# What's your name?
+# Hello Drew!
+</code></pre>
+<p>这就十分甚至九分好用，尤其是不在开发大项目而是写一个小程序的时候，IDE太冗余而且臃肿了，这时候就可以展现一下高超的linux素养（迫真！</p>
+<p>下面是一段笔者的展示:</p>
+<p><img src="Assets/13621702201527_.pic.jpg" alt="13621702201527_.pic" style="zoom: 50%;" /></p>
+<p><img src="Assets/13601702201443_.pic.jpg" alt="13601702201443_.pic" style="zoom: 67%;" /></p>
+<p><img src="Assets/13611702201511_.pic.jpg" alt="13611702201511_.pic" style="zoom:67%;" /></p>
+<h3 id="153-output-redirection">1.5.3 Output redirection <code>&gt;</code>: 储存程序的输出</h3>
+<p>继续刚才的程序. 现在我们用 <code>&gt;</code> 来把程序的输出放进一个文件. <strong>区别不同的是这里不用再创建 <code>1.out</code> 这个文件，terminal会自动帮我们创建.</strong></p>
+<ul>
+<li><code>./main.exe</code> runs the program</li>
+<li><code>&lt; main_test.in</code> redirects <code>main_test.in</code> to stdin</li>
+<li><code>&gt; main_test.out</code> redirects stdout to <code>main_test.out</code></li>
+</ul>
+<pre><code class="language-cmd">./main.exe &lt; main_test.in &gt; main_test.out
+</code></pre>
+<p>这个时候可以再加点debug！我们可以在working directory创建一个叫做 <code>main_test.out.correct</code> 的文件，然后在里面写预期的结果. 然后我们用 <code>diff</code> 来检查它和 <code>main_test.out</code> 的出入，看看是否一致，以此来debug. </p>
+<h2 id="16-useful-tips"><strong>1.6 Useful Tips</strong></h2>
+<h3 id="161-clear-clear-the-terminal">1.6.1 <code>clear</code>: clear the terminal</h3>
+<p>清理terminal/ubantu，不显示刚才写的东西. 但是并不会改变working directory.</p>
+<p>也有快捷键，是Control + L.</p>
+<h3 id="162-tab-complete">1.6.2 Tab complete</h3>
+<p>按一次tab自动补全可能的directory，按两次tab显示可选选项.</p>
+<p>比如这个C++PROJECTS中有两个子文件夹eecs183和eecs280，输入 <code>cd e</code>之后按一次tab会帮你补全成 <code>cd eecs</code> , 再按一次会显示你有eecs183和eecs280两个选项.</p>
+<p><img src="Assets/e7b44716c4945791940253b6c7453c92.PNG" alt="e7b44716c4945791940253b6c7453c92" style="zoom:67%;" /></p>
+<h3 id="163">1.6.3 ↑和↓</h3>
+<p>按 ↑ 会预输入你上一个command，也就是说问你要不要重复上个步骤. </p>
+<p>按几次 ↑ 就是上几个，同样在过程中按 ↓ 就是这个的下一个command. </p>
+<p>好处是如果连续输入多个类似command，可以用上下键来减少打字量. 如果是长命令就更加适合.</p>
+<h3 id="164-customize-prompt-prompt">1.6.4 Customize prompt: prompt改颜色</h3>
+<p>At this point, you should know whether you are using <strong>Bash</strong> or <strong>Z Shell</strong>, and you should have a working <code>.bash_profile</code> or <code>.zshrc</code> file.</p>
+<blockquote>
+<p>(1) 如果是mac的zshell:</p>
+</blockquote>
+<p>首先输入zsh打开zshell, 然后如果没创建过 <code>.zshrc</code> 文件的话，就输入 <code>touch ~/.zshrc</code> 在home directory创建一个叫  <code>.zshrc</code> 的文件，zshell会自动识别它. </p>
+<p>而后输入这一行命令</p>
+<pre><code class="language-cmd">PROMPT='%F{green}[%n] %F{blue}%~%f %B%F{blue}$%f%b '
+</code></pre>
+<p>就会更改一些关键词的颜色更加容易识别. 也可以了解一下增加更多的自定义.</p>
+<p><img src="Assets/Screenshot 2023-12-10 at 02.08.18.png" alt="Screenshot 2023-12-10 at 02.08.18" style="zoom:80%;" /></p>
+<blockquote>
+<p>(2) 如果是wsl的bash shell:</p>
+</blockquote>
+<p>首先打开ubantu, 然后如果没创建过 <code>.bash_profile</code> 文件的话输入 <code>touch ~/.bash_profile</code> 在home directory创建一个，bash shell 会自动识别它. </p>
+<p>而后输入这一行命令</p>
+<pre><code class="language-cmd">export PS1='\[\e[0;32m\][\u] \[\e[0;34m\]\w/ \[\e[01;34m\]$ \[\e[0m\]'
+</code></pre>
+<p>和mac差不多，就是改了一些关键词.</p>
+<p><img src="Assets/4414aa6c103038d9b9c3053d3ff9bd97.PNG" alt="4414aa6c103038d9b9c3053d3ff9bd97" style="zoom:80%;" /></p>
+<h2 id="17-shell-scripting"><strong>1.7 Shell Scripting(脚本)</strong></h2>
+<p>In this tutorial, you’ll learn to <strong>automate command line tasks</strong> using a shell script. Each line of code in a shell script is a command that could be entered at the command line.</p>
+<p>下面我们用一个例子来介绍.</p>
+<p><code>wc</code> 是一个用来计数的command, <code>-l</code> 表示line，行数. <code>wc -l file1</code>将返回'file1'中的行数.</p>
+<p>现在我们来写一些command用以统计the number of files and directories in the present working directory.</p>
+<pre><code class="language-cmd">ls
+# bin  hello  hello_css  html  insta485  insta485generator  pyproject.toml  tests
+echo &quot;Count of files and folders:&quot;
+# Count of files and folders:
+ls | wc -l
+# 8
+</code></pre>
+<h3 id="171-creating-a-shell-script">1.7.1 Creating a shell script</h3>
+<p>现在我们不一行一行打了. 我们创建一个text file called <code>lscount</code> and add the following contents. <strong>Notice that shell scripts may omit a file extension. shell scripts的后缀名名会被忽略，并不重要.</strong></p>
+<pre><code class="language-cmd">#!/bin/bash
+#
+# lscount
+#
+# List files and folders, followed by a count
+
+# Stop on errors, print commands
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+set -x
+
+# List
+ls
+
+# Count
+echo &quot;Count of files and folders:&quot;
+ls | wc -l
+</code></pre>
+<h3 id="172-adding-an-executable-bit">1.7.2 Adding an executable bit</h3>
+<p><em><em>We can’t yet execute the script because the </em>executable bit</em> is not yet set. The <code>rw</code> means “Read Write”. **</p>
+<p>那么怎么设置可执行的权限呢？我们在运行script之前写上 <code>chmod +x</code> 加上script的名字就可以. 这样就把 <code>rw</code> 只读改成<code>rwx</code> : “Read Write Execute”. </p>
+<pre><code class="language-cmd">chmod +x lscount
+</code></pre>
+<p>那么怎么检测有没有设置成功呢？我们使用 <code>ls -l</code> 指令.</p>
+<pre><code class="language-cmd">ls -l lscount
+</code></pre>
+<p>output是这个 <code>-rw</code> 说明权限还是只读.</p>
+<pre><code class="language-cmd"># -rw-rw-r-- 1 awdeorio staff 273 Aug 27 10:15 lscount
+</code></pre>
+<p>是下面这个 <code>-rwx</code> 说明权限改好了.</p>
+<pre><code class="language-cmd"># -rwxrwxr-x 1 awdeorio staff 273 Aug 27 10:15 lscount
+</code></pre>
+<p>最后在当前working directory运行script.</p>
+<pre><code class="language-cmd">./lscount
+</code></pre>
+<p>下面是笔者的一个示例.</p>
+<p><img src="Assets/Screenshot 2023-12-10 at 06.11.09.png" alt="Screenshot 2023-12-10 at 06.11.09" style="zoom:80%;" /></p>
+<p><img src="Assets/Screenshot 2023-12-10 at 06.14.06.png" alt="Screenshot 2023-12-10 at 06.14.06" style="zoom:67%;" /></p>
+<h3 id="173">1.7.3 注意事项</h3>
+<ol>
+<li>Shebang</li>
+</ol>
+<p>Scripts need a special first line, called a <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a>. Make sure you didn’t forget it.</p>
+<pre><code class="language-cmd">head -n1 bin/lscount
+!/bin/bash
+</code></pre>
+<ol>
+<li>Stop on errors</li>
+</ol>
+<p><strong>默认情况下，shell 脚本error时不会stop。每个bash shell 脚本的第一行代码都应该写上下面这个东西</strong>. <a href="https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/">Here’s why</a>.</p>
+<pre><code class="language-cmd">set -Eeuo pipefail
+</code></pre>
+<ol>
+<li>Lines Endings</li>
+</ol>
+<p>Scripts need to have UNIX line endings to work properly. Windows <code>CRLF line terminators</code> are a problem.</p>
+<pre><code class="language-cmd">./bin/lscount
+# -bash: ./bin/lscount: /bin/bash^M: bad interpreter: No such file or directory
+file ./bin/lscount
+# bin/lscount: Bourne-Again shell script text executable, ASCII text, with CRLF line terminators
+</code></pre>
+<p>Change Windows line endings to UNIX line endings. 以下三个方法都可以.<strong>You might have to install the <code>dos2unix</code> package.</strong></p>
+<pre><code class="language-cmd">dos2unix bin/lscount
+</code></pre>
+<pre><code class="language-cmd">fromdos bin/lscount
+</code></pre>
+<pre><code class="language-cmd">sed -ri 's/\r$//' bin/lscount
+</code></pre>
+<p>This is what a correct script file type looks like:</p>
+<pre><code class="language-cmd">file bin/lscount
+# bin/lscount: Bourne-Again shell script text executable, ASCII text
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="01-Command-Line%20Interface-%28CLI%29.html" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="02-IDEs.html" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="01-Command-Line%20Interface-%28CLI%29.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="02-IDEs.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
