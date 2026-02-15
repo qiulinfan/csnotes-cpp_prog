@@ -7,159 +7,159 @@ nav:
   - Home: index.md
   - '01 Command Line Interface (CLI)':
       - 'Overview': 01-Command-Line Interface-(CLI).md
-      - '1.1 Mac OS CLI tools Installation': 01-Command-Line Interface-(CLI).md
-      - '1.2 Windows Subsystem for Linux (WSL) Installation': 01-Command-Line Interface-(CLI).md
-      - '1.3 Basic Commands': 01-Command-Line Interface-(CLI).md
-      - '1.4 File, Directory, Path': 01-Command-Line Interface-(CLI).md
-      - '1.5 Redirection': 01-Command-Line Interface-(CLI).md
-      - '1.6 Useful Tips': 01-Command-Line Interface-(CLI).md
-      - '1.7 Shell Scripting(脚本)': 01-Command-Line Interface-(CLI).md
+      - '1.1 Mac OS CLI tools Installation': 01-Command-Line%20Interface-%28CLI%29.html#11-mac-os-cli-tools-installation
+      - '1.2 Windows Subsystem for Linux (WSL) Installation': 01-Command-Line%20Interface-%28CLI%29.html#12-windows-subsystem-for-linux-wsl-installation
+      - '1.3 Basic Commands': 01-Command-Line%20Interface-%28CLI%29.html#13-basic-commands
+      - '1.4 File, Directory, Path': 01-Command-Line%20Interface-%28CLI%29.html#14-file-directory-path
+      - '1.5 Redirection': 01-Command-Line%20Interface-%28CLI%29.html#15-redirection
+      - '1.6 Useful Tips': 01-Command-Line%20Interface-%28CLI%29.html#16-useful-tips
+      - '1.7 Shell Scripting(脚本)': 01-Command-Line%20Interface-%28CLI%29.html#17-shell-scripting
   - '02 IDEs':
       - 'Overview': 02-IDEs.md
-      - '2.1 VScode for Mac &amp; WSL/Linux': 02-IDEs.md
-      - '从该网页下载': 02-IDEs.md
-      - '解压': 02-IDEs.md
-      - '把stater-files下所有文件移动到working directory': 02-IDEs.md
-      - '删除下载文件': 02-IDEs.md
-      - '2.2 XCode on Mac': 02-IDEs.md
-      - '2.3 Visual Studio on Windows': 02-IDEs.md
-      - '2.4 Troubleshooting': 02-IDEs.md
+      - '2.1 VScode for Mac &amp; WSL/Linux': 02-IDEs.html#21-vscode-for-mac-wsllinux
+      - '从该网页下载': 02-IDEs.html#_1
+      - '解压': 02-IDEs.html#_2
+      - '把stater-files下所有文件移动到working directory': 02-IDEs.html#stater-filesworking-directory
+      - '删除下载文件': 02-IDEs.html#_3
+      - '2.2 XCode on Mac': 02-IDEs.html#22-xcode-on-mac
+      - '2.3 Visual Studio on Windows': 02-IDEs.html#23-visual-studio-on-windows
+      - '2.4 Troubleshooting': 02-IDEs.html#24-troubleshooting
   - '03 Compilation (Makefile)':
       - 'Overview': 03-Compilation-(Makefile).md
-      - '3.1 MakeFile 语法规则': 03-Compilation-(Makefile).md
-      - '3.2 Variable 变量': 03-Compilation-(Makefile).md
-      - '3.3 Example': 03-Compilation-(Makefile).md
+      - '3.1 MakeFile 语法规则': 03-Compilation-%28Makefile%29.html#31-makefile
+      - '3.2 Variable 变量': 03-Compilation-%28Makefile%29.html#32-variable
+      - '3.3 Example': 03-Compilation-%28Makefile%29.html#33-example
   - '04 Debuggers':
       - 'Overview': 04-Debuggers.md
-      - '4.1 Debugging Basis': 04-Debuggers.md
-      - '4.2 Debug Console': 04-Debuggers.md
-      - '4.3 Address Sanitizer 地址检查器': 04-Debuggers.md
-      - '4.4 Assertions': 04-Debuggers.md
-      - '4.5 Command-Line Debuggers(gbd,lldb)': 04-Debuggers.md
-      - '4.6 More Pro Tips for debugging': 04-Debuggers.md
+      - '4.1 Debugging Basis': 04-Debuggers.html#41-debugging-basis
+      - '4.2 Debug Console': 04-Debuggers.html#42-debug-console
+      - '4.3 Address Sanitizer 地址检查器': 04-Debuggers.html#43-address-sanitizer
+      - '4.4 Assertions': 04-Debuggers.html#44-assertions
+      - '4.5 Command-Line Debuggers(gbd,lldb)': 04-Debuggers.html#45-command-line-debuggersgbdlldb
+      - '4.6 More Pro Tips for debugging': 04-Debuggers.html#46-more-pro-tips-for-debugging
   - '05 Version Control (git)':
       - 'Overview': 05-Version-Control-(git).md
-      - '5.1 Github Authentication 验证': 05-Version-Control-(git).md
-      - '5.2 Create a local repository': 05-Version-Control-(git).md
-      - '5.3 创建 remote repo 及 connect local reop to remote': 05-Version-Control-(git).md
-      - '5.4 Daily work flow with version control': 05-Version-Control-(git).md
-      - '5.5 Version Control For a Team': 05-Version-Control-(git).md
-      - '5.6 注意事项': 05-Version-Control-(git).md
+      - '5.1 Github Authentication 验证': 05-Version-Control-%28git%29.html#51-github-authentication
+      - '5.2 Create a local repository': 05-Version-Control-%28git%29.html#52-create-a-local-repository
+      - '5.3 创建 remote repo 及 connect local reop to remote': 05-Version-Control-%28git%29.html#53-remote-repo-connect-local-reop-to-remote
+      - '5.4 Daily work flow with version control': 05-Version-Control-%28git%29.html#54-daily-work-flow-with-version-control
+      - '5.5 Version Control For a Team': 05-Version-Control-%28git%29.html#55-version-control-for-a-team
+      - '5.6 注意事项': 05-Version-Control-%28git%29.html#56
   - '06 Text Editors (emacs)':
       - 'Overview': 06-Text-Editors-(emacs).md
-      - '8.1 Installation and Start &amp; Quit': 06-Text-Editors-(emacs).md
-      - '8.2 Customize Key binding 自定义按键': 06-Text-Editors-(emacs).md
-      - '8.3 Pro-tips': 06-Text-Editors-(emacs).md
+      - '8.1 Installation and Start &amp; Quit': 06-Text-Editors-%28emacs%29.html#81-installation-and-start-quit
+      - '8.2 Customize Key binding 自定义按键': 06-Text-Editors-%28emacs%29.html#82-customize-key-binding
+      - '8.3 Pro-tips': 06-Text-Editors-%28emacs%29.html#83-pro-tips
   - '07 Call Stack Procedural Abstraction and Unit Tests':
       - 'Overview': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.md
-      - '7.1 Machine Model 机器模型': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.md
-      - '7.2 Function Calls and the Call Stack': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.md
-      - '7.3 Procedural Abstraction 过程抽象化': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.md
-      - '7.4 Unit Testing': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.md
+      - '7.1 Machine Model 机器模型': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html#71-machine-model
+      - '7.2 Function Calls and the Call Stack': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html#72-function-calls-and-the-call-stack
+      - '7.3 Procedural Abstraction 过程抽象化': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html#73-procedural-abstraction
+      - '7.4 Unit Testing': 07-Call-Stack-Procedural-Abstraction-and-Unit-Tests.html#74-unit-testing
   - '08 Pointers and Arrays':
       - 'Overview': 08-Pointers-and-Arrays.md
-      - '8.1 Pointer 指针': 08-Pointers-and-Arrays.md
-      - '8.2 Array': 08-Pointers-and-Arrays.md
-      - '8.3 Pointer Arithmetic': 08-Pointers-and-Arrays.md
+      - '8.1 Pointer 指针': 08-Pointers-and-Arrays.html#81-pointer
+      - '8.2 Array': 08-Pointers-and-Arrays.html#82-array
+      - '8.3 Pointer Arithmetic': 08-Pointers-and-Arrays.html#83-pointer-arithmetic
   - '09 const keyword':
       - 'Overview': 09-const-keyword.md
-      - '9.1 const as type qualifier': 09-const-keyword.md
+      - '9.1 const as type qualifier': 09-const-keyword.html#91-const-as-type-qualifier
   - '10 Compound objects, ADT and Dynamic Allocation':
       - 'Overview': 10-Compound-objects,-ADT-and-Dynamic-Allocation.md
-      - '10.1 Struct': 10-Compound-objects,-ADT-and-Dynamic-Allocation.md
-      - '10.2 Dynamic Allocation': 10-Compound-objects,-ADT-and-Dynamic-Allocation.md
+      - '10.1 Struct': 10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html#101-struct
+      - '10.2 Dynamic Allocation': 10-Compound-objects%2C-ADT-and-Dynamic-Allocation.html#102-dynamic-allocation
   - '11 C strings':
       - 'Overview': 11-C-strings.md
-      - '11.1 C-style strings: 就是末尾自动加上 null \0 的 char array': 11-C-strings.md
-      - '11.2 cout 由 char array 名字 decay 形成的 char* 会 cout 整个 char array 而不是首元素地址': 11-C-strings.md
-      - '11.3 题外话: Prefix(++x) vs. Postfix(x++) Increment': 11-C-strings.md
-      - '11.4 C-style strings 的 standard functions': 11-C-strings.md
-      - '11.5 Command Line Arguments': 11-C-strings.md
+      - '11.1 C-style strings: 就是末尾自动加上 null \0 的 char array': 11-C-strings.html#111-c-style-strings-null-0-char-array
+      - '11.2 cout 由 char array 名字 decay 形成的 char* 会 cout 整个 char array 而不是首元素地址': 11-C-strings.html#112-cout-char-array-decay-char-cout-char-array
+      - '11.3 题外话: Prefix(++x) vs. Postfix(x++) Increment': 11-C-strings.html#113-prefixx-vs-postfixx-increment
+      - '11.4 C-style strings 的 standard functions': 11-C-strings.html#114-c-style-strings-standard-functions
+      - '11.5 Command Line Arguments': 11-C-strings.html#115-command-line-arguments
   - '12 Stream and IO':
       - 'Overview': 12-Stream-and-IO.md
-      - '12.1 stdin/stdout': 12-Stream-and-IO.md
-      - '12.2 Exit Codes in C++ Programs': 12-Stream-and-IO.md
-      - '12.3 file I/O with streams: fstream': 12-Stream-and-IO.md
-      - '12.4 Stream Input/Output': 12-Stream-and-IO.md
-      - '12.5 Stringstreams': 12-Stream-and-IO.md
+      - '12.1 stdin/stdout': 12-Stream-and-IO.html#121-stdinstdout
+      - '12.2 Exit Codes in C++ Programs': 12-Stream-and-IO.html#122-exit-codes-in-c-programs
+      - '12.3 file I/O with streams: fstream': 12-Stream-and-IO.html#123-file-io-with-streams-fstream
+      - '12.4 Stream Input/Output': 12-Stream-and-IO.html#124-stream-inputoutput
+      - '12.5 Stringstreams': 12-Stream-and-IO.html#125-stringstreams
   - '13 ADT in C++':
       - 'Overview': 13-ADT-in-C++.md
-      - '13.1 Class Declaration': 13-ADT-in-C++.md
-      - '13.2 Calling a member function': 13-ADT-in-C++.md
-      - '13.3 Member Accessibility (或称 visibility)': 13-ADT-in-C++.md
-      - '13.4 Initialization': 13-ADT-in-C++.md
+      - '13.1 Class Declaration': 13-ADT-in-C%2B%2B.html#131-class-declaration
+      - '13.2 Calling a member function': 13-ADT-in-C%2B%2B.html#132-calling-a-member-function
+      - '13.3 Member Accessibility (或称 visibility)': 13-ADT-in-C%2B%2B.html#133-member-accessibility-visibility
+      - '13.4 Initialization': 13-ADT-in-C%2B%2B.html#134-initialization
   - '14 Derived Classes and Inheritance':
       - 'Overview': 14-Derived-Classes-and-Inheritance.md
-      - '14.1 Derived Classes': 14-Derived-Classes-and-Inheritance.md
-      - '14.2 Enums': 14-Derived-Classes-and-Inheritance.md
-      - '14.3 Derived class constructor': 14-Derived-Classes-and-Inheritance.md
-      - '14.4 在 Derived Class 中 override base class 的 member functions': 14-Derived-Classes-and-Inheritance.md
+      - '14.1 Derived Classes': 14-Derived-Classes-and-Inheritance.html#141-derived-classes
+      - '14.2 Enums': 14-Derived-Classes-and-Inheritance.html#142-enums
+      - '14.3 Derived class constructor': 14-Derived-Classes-and-Inheritance.html#143-derived-class-constructor
+      - '14.4 在 Derived Class 中 override base class 的 member functions': 14-Derived-Classes-and-Inheritance.html#144-derived-class-override-base-class-member-functions
   - '15 Polymorphism':
       - 'Overview': 15-Polymorphism.md
-      - '15.1 Static type 和 Dynamic type': 15-Polymorphism.md
-      - '15.2 Abstract Classes': 15-Polymorphism.md
-      - '15.3 容纳 different derived classes 的 ptr/ref 的 container': 15-Polymorphism.md
-      - '15.4 Upcasting 和 Downcasting': 15-Polymorphism.md
+      - '15.1 Static type 和 Dynamic type': 15-Polymorphism.html#151-static-type-dynamic-type
+      - '15.2 Abstract Classes': 15-Polymorphism.html#152-abstract-classes
+      - '15.3 容纳 different derived classes 的 ptr/ref 的 container': 15-Polymorphism.html#153-different-derived-classes-ptrref-container
+      - '15.4 Upcasting 和 Downcasting': 15-Polymorphism.html#154-upcasting-downcasting
   - '16 ContainerADT I':
       - 'Overview': 16-ContainerADT-I.md
-      - '16.1 Write a container ADT example: set': 16-ContainerADT-I.md
-      - '16.2 Operator overloading': 16-ContainerADT-I.md
-      - '16.3 Template: generic programming': 16-ContainerADT-I.md
-      - '16.4 注意事项': 16-ContainerADT-I.md
+      - '16.1 Write a container ADT example: set': 16-ContainerADT-I.html#161-write-a-container-adt-example-set
+      - '16.2 Operator overloading': 16-ContainerADT-I.html#162-operator-overloading
+      - '16.3 Template: generic programming': 16-ContainerADT-I.html#163-template-generic-programming
+      - '16.4 注意事项': 16-ContainerADT-I.html#164
   - '17 ContainerADT II':
       - 'Overview': 17-ContainerADT-II.md
-      - '17.1 Measuring the efficiency of an algorithm': 17-ContainerADT-II.md
-      - '17.2 Operator Overloading': 17-ContainerADT-II.md
-      - '17.3 main.cpp using using': 17-ContainerADT-II.md
-      - '17.4 其他事项': 17-ContainerADT-II.md
+      - '17.1 Measuring the efficiency of an algorithm': 17-ContainerADT-II.html#171-measuring-the-efficiency-of-an-algorithm
+      - '17.2 Operator Overloading': 17-ContainerADT-II.html#172-operator-overloading
+      - '17.3 main.cpp using using': 17-ContainerADT-II.html#173-maincpp-using-using
+      - '17.4 其他事项': 17-ContainerADT-II.html#174
   - '18 Memory Model and Dynamic Memory':
       - 'Overview': 18-Memory-Model-and-Dynamic-Memory.md
-      - '18.1 Global(Static), Local(automatic) and dynamic variables': 18-Memory-Model-and-Dynamic-Memory.md
-      - '18.2 Dynamic Memory 的使用': 18-Memory-Model-and-Dynamic-Memory.md
-      - '18.3 Program Segments': 18-Memory-Model-and-Dynamic-Memory.md
-      - '18.4 Dynamic arrays': 18-Memory-Model-and-Dynamic-Memory.md
+      - '18.1 Global(Static), Local(automatic) and dynamic variables': 18-Memory-Model-and-Dynamic-Memory.html#181-globalstatic-localautomatic-and-dynamic-variables
+      - '18.2 Dynamic Memory 的使用': 18-Memory-Model-and-Dynamic-Memory.html#182-dynamic-memory
+      - '18.3 Program Segments': 18-Memory-Model-and-Dynamic-Memory.html#183-program-segments
+      - '18.4 Dynamic arrays': 18-Memory-Model-and-Dynamic-Memory.html#184-dynamic-arrays
   - '19 Managing Dynamic Memory':
       - 'Overview': 19-Managing-Dynamic-Memory.md
-      - '19.2 更改其他 function implementations 以适应 dynamic set': 19-Managing-Dynamic-Memory.md
-      - '19.3 Performance of Set': 19-Managing-Dynamic-Memory.md
-      - '题外话: garbage collection 和 smart pointer': 19-Managing-Dynamic-Memory.md
+      - '19.2 更改其他 function implementations 以适应 dynamic set': 19-Managing-Dynamic-Memory.html#192-function-implementations-dynamic-set
+      - '19.3 Performance of Set': 19-Managing-Dynamic-Memory.html#193-performance-of-set
+      - '题外话: garbage collection 和 smart pointer': 19-Managing-Dynamic-Memory.html#garbage-collection-smart-pointer
   - '20 Deep Copies and the Big Three':
       - 'Overview': 20-Deep-Copies-and-the-Big-Three.md
-      - '20.1 Copy Constructor': 20-Deep-Copies-and-the-Big-Three.md
-      - '20.2 Assignment operator =': 20-Deep-Copies-and-the-Big-Three.md
-      - '20.3 The Rule of The Big Three': 20-Deep-Copies-and-the-Big-Three.md
+      - '20.1 Copy Constructor': 20-Deep-Copies-and-the-Big-Three.html#201-copy-constructor
+      - '20.2 Assignment operator =': 20-Deep-Copies-and-the-Big-Three.html#202-assignment-operator
+      - '20.3 The Rule of The Big Three': 20-Deep-Copies-and-the-Big-Three.html#203-the-rule-of-the-big-three
   - '21 Linked List':
       - 'Overview': 21-Linked-List.md
-      - '21.1 Sequential Container ADT': 21-Linked-List.md
-      - '21.2 Linked List': 21-Linked-List.md
-      - '21.3 Doubly Linked List': 21-Linked-List.md
+      - '21.1 Sequential Container ADT': 21-Linked-List.html#211-sequential-container-adt
+      - '21.2 Linked List': 21-Linked-List.html#212-linked-list
+      - '21.3 Doubly Linked List': 21-Linked-List.html#213-doubly-linked-list
   - '22 Iterator':
       - 'Overview': 22-Iterator.md
-      - '22.1 List&lt;type&gt;::Iterator': 22-Iterator.md
-      - '22.2 Iterator 的 implementations': 22-Iterator.md
-      - '22.3 check for the Big Three 以及使用 Iterator': 22-Iterator.md
+      - '22.1 List&lt;type&gt;::Iterator': 22-Iterator.html#221-listtypeiterator
+      - '22.2 Iterator 的 implementations': 22-Iterator.html#222-iterator-implementations
+      - '22.3 check for the Big Three 以及使用 Iterator': 22-Iterator.html#223-check-for-the-big-three-iterator
   - '23 Functors and Imposter Syndrome':
       - 'Overview': 23-Functors-and-Imposter-Syndrome.md
-      - '23.1 template &lt;typename Iter_type&gt;': 23-Functors-and-Imposter-Syndrome.md
-      - '23.2 function pointer': 23-Functors-and-Imposter-Syndrome.md
-      - '23.3 Functors: 模拟 function 的行为': 23-Functors-and-Imposter-Syndrome.md
+      - '23.1 template &lt;typename Iter_type&gt;': 23-Functors-and-Imposter-Syndrome.html#231-template-typename-iter_type
+      - '23.2 function pointer': 23-Functors-and-Imposter-Syndrome.html#232-function-pointer
+      - '23.3 Functors: 模拟 function 的行为': 23-Functors-and-Imposter-Syndrome.html#233-functors-function
   - '24 Recursion':
       - 'Overview': 24-Recursion.md
-      - '24.1 如何写 Recursion': 24-Recursion.md
-      - '24.2 Tail Recursion: 获得 Constant Space Cost': 24-Recursion.md
-      - '24.3 Structural Recursion': 24-Recursion.md
+      - '24.1 如何写 Recursion': 24-Recursion.html#241-recursion
+      - '24.2 Tail Recursion: 获得 Constant Space Cost': 24-Recursion.html#242-tail-recursion-constant-space-cost
+      - '24.3 Structural Recursion': 24-Recursion.html#243-structural-recursion
   - '25 BST and Maps':
       - 'Overview': 25-BST-and-Maps.md
-      - '25.1 BST 的定义及如何检测一个 tree 是否是 BST': 25-BST-and-Maps.md
-      - '25.2 BST methods': 25-BST-and-Maps.md
-      - '25.3 Set ADT implemented with a BST': 25-BST-and-Maps.md
-      - '25.4 Another ADT: Map': 25-BST-and-Maps.md
+      - '25.1 BST 的定义及如何检测一个 tree 是否是 BST': 25-BST-and-Maps.html#251-bst-tree-bst
+      - '25.2 BST methods': 25-BST-and-Maps.html#252-bst-methods
+      - '25.3 Set ADT implemented with a BST': 25-BST-and-Maps.html#253-set-adt-implemented-with-a-bst
+      - '25.4 Another ADT: Map': 25-BST-and-Maps.html#254-another-adt-map
   - '280 midterm cheatsheet':
       - 'Overview': 280-midterm-cheatsheet.md
-      - '1. Array and Pointer': 280-midterm-cheatsheet.md
-      - '2. const keyword': 280-midterm-cheatsheet.md
-      - '3. struct (C-style-ADT)': 280-midterm-cheatsheet.md
-      - '4. Stream 和 C-string': 280-midterm-cheatsheet.md
-      - '5. class (C++-style-ADT) and derived class': 280-midterm-cheatsheet.md
-      - '6. Polymorphism': 280-midterm-cheatsheet.md
-      - '7. Container ADT': 280-midterm-cheatsheet.md
+      - '1. Array and Pointer': 280-midterm-cheatsheet.html#1-array-and-pointer
+      - '2. const keyword': 280-midterm-cheatsheet.html#2-const-keyword
+      - '3. struct (C-style-ADT)': 280-midterm-cheatsheet.html#3-struct-c-style-adt
+      - '4. Stream 和 C-string': 280-midterm-cheatsheet.html#4-stream-c-string
+      - '5. class (C++-style-ADT) and derived class': 280-midterm-cheatsheet.html#5-class-c-style-adt-and-derived-class
+      - '6. Polymorphism': 280-midterm-cheatsheet.html#6-polymorphism
+      - '7. Container ADT': 280-midterm-cheatsheet.html#7-container-adt

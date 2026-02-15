@@ -57,6 +57,11 @@ def page_url(path: Path) -> str:
     return f"<{path.name}>"
 
 
+def page_anchor_url(path: Path, anchor: str) -> str:
+    page = quote(path.stem, safe="-_.") + ".html"
+    return f"{page}#{anchor}"
+
+
 def get_site_name() -> str:
     if README_FILE.exists():
         for line in README_FILE.read_text(encoding="utf-8").splitlines():
@@ -95,8 +100,10 @@ def generate_mkdocs_yaml(site_name: str, markdown_files: list[Path]) -> str:
 
         lines.append(f"  - {yaml_quote(title)}:")
         lines.append(f"      - {yaml_quote('Overview')}: {md.name}")
-        for section_title, _anchor in sections:
-            lines.append(f"      - {yaml_quote(section_title)}: {md.name}")
+        for section_title, anchor in sections:
+            lines.append(
+                f"      - {yaml_quote(section_title)}: {page_anchor_url(md, anchor)}"
+            )
 
     return "\n".join(lines) + "\n"
 
