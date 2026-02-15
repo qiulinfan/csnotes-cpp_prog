@@ -2,6 +2,9 @@ from __future__ import annotations
 
 from pathlib import Path
 import re
+from urllib.parse import quote
+
+import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS_DIR = ROOT / "docs"
@@ -27,6 +30,33 @@ def yaml_quote(value: str) -> str:
     return "'" + value.replace("'", "''") + "'"
 
 
+def collect_sections(path: Path) -> list[tuple[str, str]]:
+    text = path.read_text(encoding="utf-8")
+    md = markdown.Markdown(extensions=["toc"])
+    md.convert(text)
+
+    sections: list[tuple[str, str]] = []
+
+    def walk(tokens: list[dict]) -> None:
+        for token in tokens:
+            level = token.get("level")
+            if level == 2:
+                name = str(token.get("name", "")).strip()
+                anchor = str(token.get("id", "")).strip()
+                if name and anchor:
+                    sections.append((name, anchor))
+            children = token.get("children", [])
+            if children:
+                walk(children)
+
+    walk(getattr(md, "toc_tokens", []))
+    return sections
+
+
+def page_url(path: Path) -> str:
+    return f"<{path.name}>"
+
+
 def get_site_name() -> str:
     if README_FILE.exists():
         for line in README_FILE.read_text(encoding="utf-8").splitlines():
@@ -48,12 +78,25 @@ def generate_mkdocs_yaml(site_name: str, markdown_files: list[Path]) -> str:
     lines = [
         f"site_name: {yaml_quote(site_name)}",
         "docs_dir: docs",
+        "theme:",
+        "  name: readthedocs",
+        "use_directory_urls: false",
         "nav:",
         "  - Home: index.md",
     ]
 
     for md in markdown_files:
-        lines.append(f"  - {yaml_quote(display_title(md))}: {md.name}")
+        title = display_title(md)
+        sections = collect_sections(md)
+
+        if not sections:
+            lines.append(f"  - {yaml_quote(title)}: {md.name}")
+            continue
+
+        lines.append(f"  - {yaml_quote(title)}:")
+        lines.append(f"      - {yaml_quote('Overview')}: {md.name}")
+        for section_title, _anchor in sections:
+            lines.append(f"      - {yaml_quote(section_title)}: {md.name}")
 
     return "\n".join(lines) + "\n"
 
@@ -68,7 +111,7 @@ def generate_index_md(markdown_files: list[Path]) -> str:
 
     note_lines = ["## Notes", ""]
     for md in markdown_files:
-        note_lines.append(f"- [{display_title(md)}]({md.name})")
+        note_lines.append(f"- [{display_title(md)}]({page_url(md)})")
     sections.append("\n".join(note_lines))
 
     return "\n\n".join(sections).rstrip() + "\n"
